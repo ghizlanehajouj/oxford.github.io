@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        .banner{
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+        .navbar{
+            width:100% ;
+            margin: auto;
+            padding:10 px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 3px solid  #090808;
+        }
+        .logo{
+          width: 120px;
+          cursor: pointer;
+          color: rgb(11, 0, 0);
+        } 
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        } 
+        .navbar ul li a{
+            text-decoration: none;
+            color: #090808;
+            text-transform:uppercase ;
+        }
+        .navbar ul li::after{
+            content: '';
+            height: 3px;
+            width:0;
+            background: #01110f;
+            position: absolute;
+            left: 0;
+            bottom: -10px; 
+            transition: 0.5s;
+        }
+        .navbar ul li:hover:after{
+            width: 100%;
+        }
+        .navbar img{
+        width: 10%;
+        margin-top: 0px;
+        padding: 0px;
+        }
+        /*  parti_titre image ... */
+        .main{
+            width: 100%;
+            height: 750px;
+            background: beige;
+            margin-top: 20px ;
+
+        }
+        .main h1{
+            font-size: 30px;
+            color: rgb(9, 8, 8);
+            padding-top: 20px;
+            padding: 10px;
+
+        }
+        .main h1 span{
+         color:#900303;
+         font-size: 50px;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+           }
+        .main p{
+            float: left;
+            width: 30%;
+            padding: 20px;
+        }
+        .main img{
+            float: right ;
+            height: 460px;
+            width: 40%;
+            margin-right: 12px;
+            margin-top: -400px ;
+          box-shadow: 0 10px 10px rgb(96, 95, 94);
+           
+        }
+        .main  .main-tag .main-btn {
+    background: #900303;
+    position: relative;
+    padding:10px 20px;
+    top:150px;
+    left: 400px;
+    color: #fff;
+    text-decoration: none;
+   
+
+}
+
+.div1{
+    width: 20%;
+    height: 30px;
+    background: #04b396;
+    border-radius: 30px solid ;
+    margin:12px;
+    padding: 30px;
+}
+.div1:hover{
+    background: #900303;
+    color: #fff;
+}
+
+.div1 .aa {
+    text-decoration: none;
+     text-align: center;
+    font-size: 22px ;
+    margin-top: 10px;
+    color: #01110f;
+}
+
+/* parti 2 */
+
+.h1{
+    text-align: center;
+    padding: 50px;
+    font-style: oblique;
+    font-size: 50px;
+}
+
+
+img{ 
+    width: 10%;
+}
+.element-flexible{
+    /* flex: 0 0 35%; */
+    height:650px ;
+    width: 25%;
+    padding: 15px 0px;
+    background-color: rgb(12, 159, 137);
+    text-align: center;
+    border: 2px solid rgb(186, 185, 198);
+    box-sizing: border-box;
+    margin: 150px;
+    margin-top: 20px;
+    float: left;
+    color: rgb(9, 9, 9);
+    box-shadow: 15px 10px 15px  rgb(28, 28, 27);
+}
+
+p{
+    color: rgb(5, 5, 5);
+    font-style: normal;
+    font-size: 20px;
+}
+.h3{
+    padding: 10px;
+    margin: 20px;
+    color: rgb(11, 0, 0);
+    font-size: 25px;
+}
+.element-flexible img{ 
+        width: 100%;
+    }
+    /* partie_3 */
+    .main1{
+            width: 100%;
+            height: 750px;
+            margin-top: 20px ;
+
+        }
+        .main1 h1{
+            font-size: 40px;
+            color: rgb(9, 8, 8);
+            padding-top: 20px;
+            padding: 10px;
+         text-align: center;
+        }
+    
+        .main1 p{
+            float: left;
+            width: 30%;
+            padding: 20px;
+            margin-top: 6px;
+            border: 3px solid black;
+        }
+        .main1 img{
+            float: right ;
+            height: 360px;
+            width: 40%;
+            margin-right: 12px;
+            margin-top: 30px ;
+           
+        }
+       
+        /* <!-- parti_2' --> */
+        .serice{
+width: 100%;
+height: auto;
+margin: 35px 0;
+
+}
+
+.serice .service-box{
+    width: 95%;
+    margin: 0 auto;
+    display: flex; /* bach iw hda b3dhum */
+    align-items: center;
+    justify-content: space-around;
+
+}
+.serice .service-box .service-card{
+text-align: center;
+width: 310px;
+height: auto;
+padding: 15px 10px;
+margin: 20px;
+}
+.serice .service-box .service-card:hover{
+    box-shadow: 0 0 8px#001414;
+}
+
+
+.serice .service-box .service-card h3{
+    margin-bottom:10px ;
+    font-size: 30px;
+    margin-top: 4px;
+
+}
+.serice .service-box .service-card p{
+    text-align: justify;
+    margin-top: -30px;
+}
+.service-card img{
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.serice .service-box .service-card:hover img{
+        transform: scale(1.1);
+    }
+
+.container .h1{
+    margin: 20px 0 -40px;
+}
+.serice a{
+
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: #0daaaa;
+
+}
+#img2{
+    box-shadow:3px 3px #7b7c7c;
+}
+.a1{
+    text-align: center;
+    text-decoration: none;
+    
+}
+.a1 .hh{
+    color: black;
+    margin: 10px;
+
+}  
+/* <!-- parti_3 -->  */
+.element-flexible1{
+    flex: 0 0 35%;
+    height:300px ;
+    width: 23%;
+    padding: 15px 0px;
+    background-color: rgb(249, 251, 251);
+    text-align: center;
+    box-shadow: 0 10px 10px rgb(96, 95, 94);
+    box-sizing: border-box;
+    margin: 10px;
+    float: left;
+    color: rgb(6, 6, 5);  
+}
+.element-flexible1:hover{
+    box-shadow:0 10px 10px #039089;
+}
+.t4{
+    text-align: center;
+    color: rgb(12, 0, 0);
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 40px;
+    
+}
+
+
+.im{
+    width: 100%;
+    height: 230px;
+}
+
+
+.pour{
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-left: 300px;
+    text-align: center;
+    width: 50%;
+    border:2px solid gold;
+    transition: 0.3s;
+}
+.pour:hover{
+    transform: scale(1.1);
+}
+/* footer */
+footer .countenu-footer{
+    flex-shrink: 0;
+    border: 5px solid #000;
+    width: 100%;
+    background: white;
+    color: #c50b0b;
+    margin-top: 800px;
+    height: 300px;
+}
+.countenu-footer{
+    width: 1200px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   font-size: 20px;
+   padding: 50px 0 100px;
+}
+.bloc{
+    width: 25%;
+    margin: 0 30px;
+}
+/* contact */
+.footer-contact h3,
+.footer-services h3,
+.footer-medias   h3{
+    font-size: 25px;
+    padding-bottom:20px ;
+
+}
+.footer-contact p{
+    padding: 5px 0;
+}
+/* servcs*/
+.Liste-services,
+.Liste-medias {
+ list-style-type: none; 
+}
+.Liste-services li{
+    padding: 2px 0px; 
+}
+.Liste-services a{
+    text-decoration: none;
+    color: #333;
+}
+.Liste-services a:hover{
+    color:rgb(4, 176, 174) ;
+}
+
+img{
+    width: 20px;
+}
+
+/* medias*/
+.Liste-medias img{
+width:40px ;
+margin: 10px 10px;
+}
+.Liste-medias{
+    position: relative;
+    right: 10px;
+}
+.Liste-medias a{
+text-decoration: none;
+color: #333;
+display: flex;
+align-items: center;
+font-size: 25px;
+}
+.di2{
+top: 300px;
+text-align: center;
+}
+  </style>
+
+</head>
+<body>
+
+
+ <div class="banner">
+        <div class="navbar">   
+           <img src="c:\Users\LENOVO\Desktop\html - Copie\téléchargement (1).png">
+           <ul>
+               <li><a href="c:\Users\LENOVO\Desktop\html - Copie\mysiteweb.html">Home</a></li>
+               <li><a href="c:\Users\LENOVO\Desktop\html - Copie\index2.html">A Propos</a></li>
+               <li><a href="c:\Users\LENOVO\Desktop\html - Copie\contact.html">Library</a></li>
+               <li><a href="c:\Users\LENOVO\Desktop\html - Copie\library.html">A store</a></li>
+               <li><a href="c:\wamp64\www\subscripe1.html">Register</a></li>
+           </ul>
+        </div>
+        <!-- parti_titre image ...-->
+        <div class="main">
+            <div class="main-tag">
+                <h1><span>R</span>egistration<br><span>U</span>niversity of Oxford</h1><br>
+                <div class="div1"><a href="# regis tere" class="aa" >Registration conditions</a></div>
+                <div class="div1"><a href="#tt" class="aa">Scholarships</a></div>
+                <div class="div1"><a href="#qwrq" class="aa">Study specializations</a></div>
+          
+            <img src="c:\Users\LENOVO\Desktop\html - Copie\152a96159ab35e4dce708c5bfa24261d.jpg">
+            <a href="#" class="main-btn">Learn More</a>
+            </div>
+    </div>
+
+    <!-- parti_1 -->
+<div class="sec">
+        <h1 class="h1" id=" regis tere">Registration conditions</h1>
+   <div class="element-flexible">
+         <h3 class="h3">langage</h3>
+        <img src="téléchargement (26).jpg">
+       <p>
+        Admission to the University of Oxford is to offer the Cambridge Certificate of English Proficiency at the highest level of 191 and 185 for each section.
+        Or obtain a standard average of 185 as a minimum, and 176 in the rest of the language skills.
+        Submit the Cambridge Advanced Certificate (CAE) and obtain the highest average score of 191, in addition to obtaining a score of 185 in the remaining sections, or obtaining a standard level of 185, 176 in the remaining language skills.
+        </p>
+    </div>
+
+    <div class="element-flexible" ><h3 class="h3">Study fees</h3>
+        <img src="images (28).jpg">
+    <p>
+    Undergraduate tuition fees are £9,250 per year for UK and EU students,
+     and £24,750 per year for international students. Add the cost of living,
+      which is estimated at between £12,000 and £19,000 per year, and you're looking at a very expensive education.
+      Tuition fees for international students exceed £30,000 per year
+    </p>
+    </div>
+</div>
+
+ <!-- parti_2 -->
+<section id="tt">
+    <div class="main1" >
+        <div class="main-tag1"  >
+            <h1 >Scholarships</h1><br>
+            
+        <img src="c:\Users\LENOVO\Desktop\html - Copie\Key-to-Success (1).jpg">
+       
+        <p>
+            Undergraduate tuition fees are £9,250 per year for UK and EU students,
+             and £24,750 per year for international students. Add the cost of living,
+              which is estimated at between £12,000 and £19,000 per year, and you're looking at a very expensive education.
+              Tuition fees for international students exceed £30,000 per year
+            </p>
+        </div>
+</div>
+
+ <!-- parti_2' -->
+
+<div class="serice">
+    <div class="service-box">
+        <div class="service-card">
+            <img src="c:\Users\LENOVO\Desktop\html - Copie\téléchargement (27).jpg">
+            <a href="https://www.bodleian.ox.ac.uk/about/jobs" class="a1"> <h3 class="hh">Grant</h3></a>
+            <p>You can follow the progress of your request on messervices.etudiant.gouv.fr. At the end of the study of your file, you will be sent by email a conditional scholarship notification, to be sent to your establishment.</p>
+        </div>
+        <div class="service-card">
+           <img src="images (30).jpg">
+           <a href="https://www.bodleian.ox.ac.uk/about/jobs" class="a1"> <h3 class="hh"> Outstanding students</h3></a>
+            <p>Those who obtain high points are superior to other people. They are helped to complete their studies in a group of international schools or universities, such as Oxford, where they are given privileges of 25% of their income.</p>
+        </div>
+        <div class="service-card">
+            <img src="images (29).jpg">
+            <a href="https://www.bodleian.ox.ac.uk/about/jobs" class="a1"> <h3 class="hh">About Scholarships</h3></a>
+            <p>Oxford has a distinctive collegiate structure. Students and academics benefit from belonging both to the University, a large, internationally-renowned institution, and to a college or hall, a small, interdisciplinary academic community.</p>
+        </div>
+       
+    </div> 
+
+
+
+    <div class="pour">
+      <h4>LOGIN TO VIEW</h4>
+        <p>To continue reading this page, please Log in. If you do not have an account with us then simply<a href="#">Regest New</a></p>
+    </div>
+
+</section> 
+
+
+ <!-- parti_3 -->
+
+ <section>
+<h1 class="t4" id="qwrq">University specializations</h1>
+<div class="element-flexible1"><h3>Criminology </h3> 
+ <img src="c:\Users\LENOVO\Desktop\html - Copie\c151d11488f39d7277163c4013c805ed.jpg" class="im"></div>
+<div class="element-flexible1"><h3>Library and information sciences</h3> <img src="c:\Users\LENOVO\Desktop\html - Copie\a3438c5c0d719565d87957c19b8a351b.jpg" width="100%" height="250px"  class="im"></div>
+<div class="element-flexible1"><h3>General economics</h3> <img src="c:\Users\LENOVO\Desktop\html - Copie\59de6d4e9499adfbef08cdf863c8a2e6.jpg" height="250px" width="100%" class="im"></div>
+<div class="element-flexible1"><h3>Marine sciences</h3> <img src="c:\Users\LENOVO\Desktop\html - Copie\d5be803d19188aa7a39faac6fd673fa9.jpg" width="100%" height="250px" class="im"></div>
+<div class="element-flexible1"><h3>Marine navigation</h3> <img src="c:\Users\LENOVO\Desktop\html - Copie\852f76948d3c61fae22ea999d3e5b8d1.jpg"  width="100%" height="250px"  class="im"></div>
+<div class="element-flexible1"><h3>Occupational Health  and Safety</h3><img src="c:\Users\LENOVO\Desktop\html - Copie\d950869a8d962239f33036f4a180ee08.jpg" width="100%" height="250px" class="im"></div>
+<div class="element-flexible1"><h3>Mathematics</h3><img src="c:\Users\LENOVO\Desktop\html - Copie\3ae247610f502b9a4c0cccb8bf483304.jpg"  width="100%" height="250px" class="im"></div>
+<div class="element-flexible1"><h3>Industrial chemistry</h3> <img src="c:\Users\LENOVO\Desktop\html - Copie\téléchargement (10).jpg"  width="100%" height="250px" class="im"></div>
+</section>
+
+<!-- dernier_parti -->
+
+    <footer>
+       <div class="countenu-footer">
+           
+            <div class="bloc countenu-contact">
+                <h3>localization</h3>
+                <p>55-55-55-55-55</p>
+                <p>supportclient@contact.com</p>
+                <p>Queen Isabel Street,London VII ,75007</p>
+            </div>
+                <div class="bloc countenu-services">
+                    <h3>COMMUNITY</h3>
+                    <ul class="Liste-services">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">ideas</a></li>
+                        <li><a href="#">Developers</a> </li>
+                        <li><a href="#">About us</a></li>
+                    </ul>
+                </div>
+                <div class="bloc countenu-medias">
+                    <h3>Find us in social media</h3>
+                    <ul class="Liste-medias">
+                        <li><a href="#"><img src="c:\Users\LENOVO\Desktop\html - Copie\téléchargement (28).jpg">Instagrame/stuff</a></li>
+                        <li><a href="#"><img src="c:\Users\LENOVO\Desktop\html - Copie\téléchargement (11).png">Facebook/monsite</a></li>
+                        <li><a href="#"><img src="téléchargement (9).png">Twitter/lorem</a></li>
+                        <li><a href="#"><img src="téléchargement (10).png">Github/HelloWorld </a></li>
+                        <li><a href="#"><img src="c:\Users\LENOVO\Desktop\html - Copie\téléchargement (8).png">Youtibe/channel</a></li>
+                    </ul>
+                </div> 
+                
+       </div>
+       <div class="di2"><a>wih@fav</a></div>
+   </footer>
+ 
+   
+   
+</div> 
+</body>
+</html>
